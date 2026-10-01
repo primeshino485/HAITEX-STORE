@@ -1,0 +1,7 @@
+{
+  "name": "MY STORE",
+  "description": "Boutique e-commerce mobile-first pour produits et services numériques : Gaming Top Up, Streaming et Panels avec portefeuille HTG et paiements réels MonCash et NatCash.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

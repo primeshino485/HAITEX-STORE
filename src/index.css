@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* Theme system variables and light mode adaptation */
+:root {
+  color-scheme: dark light;
+}
+
+html.dark,
+[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+html.light,
+[data-theme='light'] {
+  color-scheme: light;
+}
+
+/* Smooth color transition for theme switching */
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Light mode overrides for container, cards, text, and form elements */
+html.light body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* App root backgrounds */
+html.light .bg-\[\#070b13\],
+html.light .bg-\[\#090d16\],
+html.light .bg-\[\#0b0f19\],
+html.light .bg-\[\#0a0f1d\],
+html.light .bg-\[\#0b101c\],
+html.light .bg-\[\#0b101b\] {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Secondary & card surfaces */
+html.light .bg-\[\#0e1422\],
+html.light .bg-\[\#0d1424\],
+html.light .bg-\[\#0d1527\],
+html.light .bg-\[\#111827\],
+html.light .bg-\[\#121929\],
+html.light .bg-\[\#0c121e\] {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html.light .bg-\[\#0c121e\]\/95,
+html.light .bg-\[\#070b13\]\/90,
+html.light .bg-\[\#070b13\]\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light .bg-slate-900,
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/40 {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html.light .bg-slate-950,
+html.light .bg-slate-950\/80 {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light .bg-slate-800,
+html.light .bg-slate-800\/80,
+html.light .bg-slate-800\/50 {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+/* Borders */
+html.light .border-slate-800,
+html.light .border-slate-800\/80,
+html.light .border-slate-800\/60,
+html.light .border-slate-700,
+html.light .border-slate-700\/80,
+html.light .border-slate-700\/60 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Text elements */
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+html.light .text-slate-300,
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Inputs & forms in light mode */
+html.light input:not([type="checkbox"]):not([type="radio"]),
+html.light textarea,
+html.light select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Light mode modals overlay */
+html.light .fixed.inset-0.bg-black\/85,
+html.light .fixed.inset-0.bg-black\/80,
+html.light .fixed.inset-0.bg-black\/75 {
+  background-color: rgba(15, 23, 42, 0.65) !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
